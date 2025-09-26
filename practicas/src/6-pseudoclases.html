@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudoclases</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-zinc-950 flex justify-center items-center h-screen">
+  <form class="text-white bg-zinc-800 min-w-[min(90%,400px)] rounded-2xl px-8 py-12 border border-white
+  has-checked:bg-green-300
+  ">
+    <h2 class="text-4xl font-bold mb-6">Sign Up</h2>
+    <div class="flex flex-col gap-6">
+      <label class="flex flex-col gap-2      
+      ">
+        <span>
+          Name</span>
+        <input type="text" placeholder="Enter your name" class="border border-white py-2 px-4 rounded-md
+        focus:outline-green-500
+        outline 
+        ">
+      </label>
+      <label class="flex flex-col gap-2">
+        <span>
+          Email</span>
+        <input type="email" placeholder="Enter your email" class="border border-white py-2 px-4 rounded-md">
+      </label>
+      <label class="flex flex-col gap-2">
+        <span>
+          Confirm password</span>
+        <input type="password" placeholder="Enter your password" class="border border-white py-2 px-4 rounded-md">
+      </label>
+      <label class="flex items-center gap-2">
+        <input type="checkbox" class="w-4 h-4">
+        <span>I agree with terms and conditions</span>
+      </label>
+      <input type="submit" value="Sign up" class="bg-blue-600 py-4 font-bold rounded-md">
+    </div>
+
+  </form>
+
+</body>
+
+</html>

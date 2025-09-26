@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group</title>
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+  <section class="bg-purple-100 py-20 group/section-link">
+    <h1 class="mb-6 text-center text-2xl font-extrabold">¡Aprende Tailwind desde Cero!</h1>
+    <a href="#" class="flex bg-purple-900 w-max px-10 py-4 gap-2 rounded-xl fill-white mx-auto
+    hover:bg-purple-400
+      group/link
+    ">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 group-hover/link:fill-black" viewBox="0 0 24 24">
+        <path
+          d="M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z">
+        </path>
+      </svg>
+      <span class="text-white font-semibold
+        group-hover/link:text-black
+        group-active/section-link:font-light
+        ">Accede al curso</span>
+    </a>
+
+  </section>
+  <figure class="w-70 rounded-3xl mx-auto my-60 relative group/figure overflow-hidden">
+    <img src="./images//pexels-railgunbreaker-33987737.jpg" alt=""
+      class="rounded-[inherit] group-hover/figure:scale-150 group-hover/figure:rotate-30 transition-transform">
+    <div class="absolute w-full h-full bg-purple-900/70 rounded-[inherit] flex justify-center items-center top-0
+    translate-y-full
+    group-hover/figure:translate-0
+    transition-transform
+    ">
+      <h3 class="text-3xl font-bold text-white opacity-0
+      group-hover/figure:opacity-100
+      ">¡Aprende Tailwind!</h3>
+    </div>
+  </figure>
+</body>
+
+</html>
