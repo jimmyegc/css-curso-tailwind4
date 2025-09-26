@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peer</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <style>
+    .input-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+    .input-wrapper::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 18px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 24 24'><path d='M16 10c0-2.21-1.79-4-4-4s-4 1.79-4 4 1.79 4 4 4 4-1.79 4-4m-6 0c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2'/><path d='M11.42 21.81c.17.12.38.19.58.19s.41-.06.58-.19c.3-.22 7.45-5.37 7.42-11.82 0-4.41-3.59-8-8-8s-8 3.59-8 8c-.03 6.44 7.12 11.6 7.42 11.82M12 4c3.31 0 6 2.69 6 6 .02 4.44-4.39 8.43-6 9.74-1.61-1.31-6.02-5.29-6-9.74 0-3.31 2.69-6 6-6'/></svg>");
+      background-repeat: no-repeat;
+      background-size: contain;
+      pointer-events: none;
+      /* No bloquea el input */
+    }
+
+    .input-wrapper input {
+      padding-left: 40px;
+      /* deja espacio para el icono */
+      height: 40px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      outline: none;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body class="bg-zinc-300 flex h-screen items-center justify-center">
+  <form class="bg-white px-6 py-10 rounded-xl shadow-xl flex flex-col gap-6 relative w-80">
+    <!-- Grupo input -->
+    <div class="relative w-full">
+      <input type="text" placeholder=" "
+        class="peer block w-full border-b-2 border-zinc-400 bg-transparent px-2 pt-4 pb-1 text-sm text-gray-900 focus:border-blue-600 focus:outline-none" />
+      <label
+        class="absolute left-2 top-0 text-zinc-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:-top-2 peer-focus:text-blue-600 peer-focus:text-sm">
+        Ingresa tu nombre
+      </label>
+    </div>
+
+    <!-- Botón -->
+    <button class="w-full py-3 rounded-lg bg-blue-600 text-white font-medium hover:bg-blue-700 transition-colors"
+      type="submit">
+      Continuar
+    </button>
+
+    <div>
+
+      <input class="peer" />
+      <label class="peer-focus:text-blue-600">Texto</label>
+    </div>
+
+    <div class="relative">
+      <input type="text" placeholder=" " class="peer" />
+      <label class="absolute left-2 top-4 
+    peer-placeholder-shown:top-4 peer-placeholder-shown:text-gray-400
+    peer-focus:top-1 peer-focus:text-blue-600
+  ">
+        Nombre
+      </label>
+    </div>
+
+    <div class="input-wrapper">
+      <input type="text" placeholder="Buscar...">
+    </div>
+  </form>
+
+</body>
+
+</html>
